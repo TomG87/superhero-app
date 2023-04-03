@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
-get "/superhero" => "superheroes#show"
-get "/superhero" => "superheroes#index"
+get "/superheroes/:id" => "superheroes#show"
+get "/superheroes" => "superheroes#index"
+post "/superheroes" => "superheroes#create"
+patch "/superheroes/:id" => "superheroes#update"
+delete "/superheroes/:id" => "superheroes#destroy"
 end
